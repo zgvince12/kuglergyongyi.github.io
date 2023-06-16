@@ -1,0 +1,8 @@
+name: deploy
+run-name: ${{ github.actor }} is deploying application
+on: [push]
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
